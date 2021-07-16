@@ -41,6 +41,7 @@ const HistoryChart = ({ data }) => {
                     ...historyOptions,
                 },
             });
+            console.log(chartInstance);
         }
     });
 
