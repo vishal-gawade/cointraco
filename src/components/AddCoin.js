@@ -7,14 +7,16 @@ const AddCoin = () => {
     const availableCoins = [
         "bitcoin",
         "ethereum",
-        "ripple",
-        "tether",
-        "bitcoin-cash",
         "litecoin",
-        "eos",
-        "okb",
-        "tezos",
         "cardano",
+        "polkadot",
+        "bitcoin-cash",
+        "stellar",
+        "chainlink",
+        "binancecoin",
+        "tether",
+        "monero",
+        "dogecoin"
     ];
 
     const handleClick = (coin) => {
@@ -26,7 +28,7 @@ const AddCoin = () => {
         <div className="dropdown">
             <button
                 onClick={() => setIsActive(!isActive)}
-                className="btn btn-primary dropdown-toggle"
+                className="btn btn-light dropdown-toggle"
                 type="button"
             >
                 Add Coin

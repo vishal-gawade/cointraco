@@ -3,7 +3,7 @@ import AddCoin from '../components/AddCoin';
 import CoinList from '../components/CoinList';
 const CoinSummaryPage = () => {
     return (
-        <div className="coinsummary shadow border p-2 rounded mt-2 bg-light">
+        <div className="coinsummary border-0 p-3 rounded mt-2 ">
             <AddCoin/>
             <CoinList/>
         </div>  

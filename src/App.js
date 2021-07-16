@@ -8,7 +8,7 @@ import { WatchListContextProvider } from './context/WatchListContext';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container ">
       <WatchListContextProvider>
         <BrowserRouter>
           <Header />

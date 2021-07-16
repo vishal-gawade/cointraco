@@ -36,7 +36,7 @@ const CoinList = () => {
             return <div >Loading...</div>
         }
         return (
-            <ul className="coinlist list-group mt-2">
+            <ul className="coinlist list-group mt-2 ">
                 {coins.map((coin) => {
                     return <Coin key={coin.id} coin={coin} deleteCoin={deleteCoin} />
                 })}

@@ -4,14 +4,14 @@ const CoinData = ({data}) => {
     const renderData = () => {
         if(data){
             return (
-                <div className="bg-white mt-3 p-2 rounded border row">
+                <div className="bg-white mx-auto my-3 p-2 rounded border row">
                     <div className="col-sm">
-                        <div className="d-flex flex-column">
+                        <div className="d-flex flex-column py-2">
                             <span className="text-muted coin-data-category">Market Cap</span>
-                            <span>{ data.market_cap}</span>
+                            <span>₹{ data.market_cap}</span>
                         </div>
                         <hr />
-                        <div className="d-flex flex-column">
+                        <div className="d-flex flex-column py-2">
                             <span className="text-muted coin-data-category">
                                 Total Supply
                             </span>
@@ -20,30 +20,30 @@ const CoinData = ({data}) => {
                     </div>
 
                     <div className="col-sm">
-                        <div className="d-flex flex-column">
+                        <div className="d-flex flex-column py-2">
                             <span className="text-muted coin-data-category">Volume(24H)</span>
                             <span>{ data.total_volume }</span>
                         </div>
                         <hr />
-                        <div className="d-flex flex-column">
+                        <div className="d-flex flex-column py-2">
                             <span className="text-muted coin-data-category">
                                 High 24H
                             </span>
-                            <span>{ data.high_24h }</span>
+                            <span>₹{ data.high_24h }</span>
                         </div>
                     </div>
 
                     <div className="col-sm">
-                        <div className="d-flex flex-column">
+                        <div className="d-flex flex-column py-2">
                             <span className="text-muted coin-data-category">Circulating Supply</span>
                             <span>{ data.circulating_supply}</span>
                         </div>
                         <hr />
-                        <div className="d-flex flex-column">
+                        <div className="d-flex flex-column py-2">
                             <span className="text-muted coin-data-category">
                                 Low 24H
                             </span>
-                            <span>{ data.low_24h}</span>
+                            <span>₹{ data.low_24h}</span>
                         </div>
                     </div>
                 </div>

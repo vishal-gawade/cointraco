@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
     return (
         <div>
-            <h1 className="text-center text-warning mt-3 mb-4">Cointraco</h1>
+            <h1 className="text-center mt-3 mb-4">Cointraco</h1>
         </div>
     )
 }
