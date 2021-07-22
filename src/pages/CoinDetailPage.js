@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import HistoryChart from "../components/HistoryChart";
 import CoinData from "../components/CoinData";
 import coinGecko from "../apis/coinGecko";
-
+import HashLoader from "react-spinners/HashLoader";
+import '../App.css';
 const CoinDetailPage = () => {
     const { id } = useParams();
     const [coinData, setCoinData] = useState({});
@@ -17,6 +18,8 @@ const CoinDetailPage = () => {
             };
         });
     };
+
+    
 
     useEffect(() => {
         const fetchData = async () => {
@@ -63,7 +66,12 @@ const CoinDetailPage = () => {
 
     const renderData = () => {
         if (isLoading) {
-            return <div className="text-white">Loading....</div>;
+            return <div className="loading">
+                <HashLoader size={70}
+                    color={"#ff9f00"}
+                    loading={isLoading}
+                />
+            </div>;
         }
         return (
             <div className="coinlist">

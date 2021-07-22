@@ -33,7 +33,7 @@ const CoinList = () => {
 
     const renderCoins = () => {
         if (isLoading) {
-            return <div >Loading...</div>
+            return <div >Load...</div>
         }
         return (
             <ul className="coinlist list-group mt-2 ">
