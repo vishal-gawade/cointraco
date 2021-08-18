@@ -7,11 +7,11 @@
 
 body {
   
- background-image: url('./images/bitcoin-2729806_1920.jpg');
+ /* background-image: url('./images/bitcoin-2729806_1920.jpg');
  background-repeat: no-repeat;
  background-attachment: fixed;
- background-size: 100% 100%;
-
+ background-size: 100% 100%; */
+background-color: #36454f;
 }
 h1{
   font-family: 'Dancing Script', cursive;

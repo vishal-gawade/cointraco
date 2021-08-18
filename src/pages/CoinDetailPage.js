@@ -67,7 +67,7 @@ const CoinDetailPage = () => {
     const renderData = () => {
         if (isLoading) {
             return <div className="loading">
-                <HashLoader size={70}
+                <HashLoader size={50}
                     color={"#ff9f00"}
                     loading={isLoading}
                 />
